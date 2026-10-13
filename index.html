@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#07111f">
+<meta name="description" content="Mister Neutro — guias, builds e ajuda para jogadores de Tibia.">
+<title>Mister Neutro | Guias e ajuda para Tibia</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#inicio" aria-label="Mister Neutro - início">
+    <span class="brand-mark">⚔</span><span>Mister <b>Neutro</b></span>
+  </a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  <nav id="nav">
+    <a class="active" href="#inicio">⌂ Início</a>
+    <a href="#vocoes">♜ Vocações</a>
+    <a href="#guias">▤ Guias</a>
+    <a href="#ajuda">☻ Ajuda</a>
+    <a href="#sobre">ⓘ Sobre</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="inicio">
+    <div class="hero-shade"></div>
+    <div class="hero-content">
+      <p class="eyebrow">CENTRAL DE AJUDA PARA JOGADORES</p>
+      <h1>Sua jornada em Tibia<br><span>começa aqui</span></h1>
+      <p class="hero-sub">Guias, builds e ajuda para jogadores.</p>
+      <a class="button button-teal" href="#guias">▤ &nbsp; Explorar guias <span>→</span></a>
+    </div>
+  </section>
+
+  <section class="build-panel panel" id="vocoes">
+    <div class="section-heading">
+      <div class="heading-icon">⚔</div>
+      <div><h2>Monte sua build</h2><p>Escolha a vocação, o level e o tipo de build para começar.</p></div>
+    </div>
+    <form id="buildForm" class="build-form">
+      <label class="field"><span>Vocação</span>
+        <select id="vocation">
+          <option value="Knight">Knight</option><option value="Paladin" selected>Paladin</option>
+          <option value="Sorcerer">Sorcerer</option><option value="Druid">Druid</option>
+        </select>
+      </label>
+      <label class="field"><span>Level</span><input id="level" type="number" min="1" max="9999" value="1100" required></label>
+      <label class="field"><span>Build</span>
+        <select id="buildType"><option value="Physical" selected>Physical</option><option value="Balanced">Balanced</option><option value="Defensive">Defensive</option></select>
+      </label>
+      <button class="button button-gold" type="submit">⚙ &nbsp; Gerar build</button>
+    </form>
+    <div class="build-result" id="buildResult" aria-live="polite">Selecione suas opções e clique em <b>Gerar build</b> para criar um resumo inicial.</div>
+  </section>
+
+  <section class="feature-grid" id="guias">
+    <article class="feature-card">
+      <div class="feature-art art-knight" aria-hidden="true">♞</div>
+      <div><h3>Guias de vocações</h3><p>Conheça as vocações, equipamentos e estratégias para sua jornada.</p><a href="#vocoes">Ver guias <span>→</span></a></div>
+    </article>
+    <article class="feature-card">
+      <div class="feature-art art-hunt" aria-hidden="true">🐉</div>
+      <div><h3>Dicas de hunts</h3><p>Organize suas próximas caçadas com dicas de experiência, loot e preparação.</p><a href="#ajuda">Ver dicas <span>→</span></a></div>
+    </article>
+    <article class="feature-card" id="ajuda">
+      <div class="feature-art art-community" aria-hidden="true">♟</div>
+      <div><h3>Ajuda da comunidade</h3><p>Compartilhe conhecimento e encontre outros jogadores para trocar ideias.</p><a href="#contato">Acessar comunidade <span>→</span></a></div>
+    </article>
+  </section>
+
+  <section class="help-panel panel" id="contato">
+    <div><p class="eyebrow">JOGADORES AJUDANDO JOGADORES</p><h2>Precisa de uma mão na sua aventura?</h2><p>Adicione aqui o link do seu Discord, grupo ou formulário para os jogadores pedirem ajuda.</p></div>
+    <a class="button button-teal" href="mailto:contato@example.com?subject=Ajuda%20Mister%20Neutro">Entrar em contato →</a>
+  </section>
+
+  <section class="about" id="sobre"><span class="ornament">◆ ───────── ◆ ───────── ◆</span><p>Projeto independente feito por jogadores, para jogadores.</p><small>Mister Neutro • Guia comunitário não oficial</small></section>
+</main>
+<footer><span>© <span id="year"></span> Mister Neutro</span><span>Projeto de fãs, não afiliado à CipSoft.</span></footer>
+<script src="script.js"></script>
+</body>
+</html>
